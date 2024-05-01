@@ -1,0 +1,14 @@
+Provide the filepath you wish to direct your output to. \\win.ad.jhu.edu\Users$\HOME\WINDOWS\
+> uvdi\Desktop\stata\intermediate\hw5
+qui {
+        capture program drop table1_fena
+        program define table1_fena
+
+                qui {
+                        
+                        syntax [if] [, var(string) by(varname) title(string) excel(string) ca
+> tt(int 15) missingness]
+Use the above syntax to create a Table 1 for your simulated dataset. 
+Type ds to review the variables available to you in this dataset. 
+When finished, type the commands pwd and ls to see your outputfiles. 
+Remember: your syntax should always be preceeded with a command (e.g., table1_fena). 
